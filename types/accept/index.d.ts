@@ -1,4 +1,4 @@
-// Type definitions for accept 3.1
+// Type definitions for accept 3.1.1
 // Project: https://github.com/hapijs/accept#readme
 // Definitions by: feinoujc <https://github.com/feinoujc>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
@@ -10,6 +10,7 @@ export function encoding(encodingHeader?: string, preferences?: string[]): strin
 export function encodings(encodingHeader?: string): string[];
 export function language(languageHeader?: string, preferences?: string[]): string;
 export function languages(languageHeader?: string): string[];
+export function mediaType(mediaTypeHeader?: string, preferences?: string[]): string;
 export function mediaTypes(mediaTypeHeader?: string): string[];
 export function parseAll(
     headers: Record<string, string | string[] | undefined>
